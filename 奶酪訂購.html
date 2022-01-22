@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U0833018 期末DEMO_奶酪訂購網站</title>
+	<meta name="viewport" content="width=device-width">	   
+	<link rel="stylesheet" type="text/css" href="pc.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="tab.css" media="screen and (min-width:600px) and (max-width:979px)">
+    <link rel="stylesheet" type="text/css" href="phone.css" media="screen and (max-width:599px)">
+  	<script language="javascript">
+		var info="歡迎光臨小山甜點市集　　　　　　　　　　　　　　　";
+		var interval=200;
+		var empty="";
+		var sin=0;
+		function Scroll()
+		{
+			document.myForm.myText.value = info.substring(sin, info.length) 
+			+ empty + info.substring(0, info.length);
+			sin++;
+			sin++;
+			if (sin > info.length) sin = 0;
+			window.setTimeout("Scroll();", interval);	
+		} 
+    </script>
+  </head>
+  <body onload="javascript:Scroll();">
+	<form name="myForm">
+    <div id="container">
+	
+      <header>
+	    <img src="logo-小山甜點市集.png"><input type="text" name="myText" size="30">
+		<nav id="items">
+		  <ul>
+		    <li><a href="奶酪訂購.html">首頁</a></li>
+			<li><a href="item2.html">關於</a></li>
+			<li><a href="item3.html">報導</a></li>
+			<li><a href="U0833018.html">購物</a></li>		
+		  </ul>
+		</nav>
+	  </header>
+	
+	  <article>
+	    <p>觸動你的視覺，抓住您的味蕾，這就是幸福的感覺，堅持以紮實的食材與技術來創作每一份甜點，讓每一位客人咬下一口就能體驗到滿溢出來的幸福滋味。</p>
+	    <img src="小山甜點市集-8折優惠活動.png"width="600" height="500">
+	  </article>
+	
+	  <aside>
+	    <h3>線上購物類別</h3>
+	    <nav id="travels">
+		  <ul>
+		    <li><a href="travel1.html">瑞士捲</a></li>
+			<li><a href="travel2.html">熟成蛋糕</a></li>
+			<li><a href="travel3.html">輕柔乳酪</a></li>
+			<li><a href="travel4.html">布雪系列</a></li>
+			<li><a href="travel5.html">千層泡芙</a></li>
+			<li><a href="U0833018.html">奶酪</a></li>
+			<li><a href="travel7.html">四分之一派</a></li>
+			<li><a href="travel8.html">彌月產品</a></li>
+			<li><a href="travel9.html">周邊商品</a></li>
+			<li><a href="travel10.html">手工餅乾</a></li>
+		  </ul>
+		</nav>
+		<h3>媒體報導</h3>
+		<nav id="mediaVideo">
+		  <video controls>
+                    <source src="王牌大明星.mp4" type="video/mp4">
+                </video>
+		</nav>
+	  </aside>
+	  
+	
+  	  <footer>
+	    <p>小山甜點市集｜SAM SWEETIE MARKET<br>
+		   公司地址：新北市220板橋區文化路1號<br>
+           服務電話：0800-000-001<br>
+		   小山甜點市集提供</p>
+	  </footer>
+	</div>
+	</form>
+  </body>
+</html>
